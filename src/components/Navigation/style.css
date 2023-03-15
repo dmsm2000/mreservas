@@ -1,0 +1,124 @@
+.navbar {
+  z-index: 1000;
+  background-color: var(--primaryColor);
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  z-index: 1000;
+  background-color: var(--primaryColor);
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: var(--secondaryColor);
+  width: 80%;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-toggle {
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.bottom {
+  background-color: var(--primaryColor);
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+}
+
+.end {
+  background-color: var(--primaryColor);
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+span {
+  margin-left: 16px;
+}
+
+.select-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0 8px 2px;
+  list-style: none;
+  height: 60px;
+  background: transparent;
+  color: #f5f5f5 !important;
+  border: none !important;
+}
+.select-text .ReactFlagsSelect-module_selectBtn__19wW7 {
+  color: #fff !important;
+  border: none !important;
+}
+.select-text .ReactFlagsSelect-module_label__27pw9,
+.select-text .ReactFlagsSelect-module_secondaryLabel__37t1D {
+  color: #f5f5f5 !important;
+}
+.select-text .ReactFlagsSelect-module_label__27pw9:hover,
+.select-text .ReactFlagsSelect-module_secondaryLabel__37t1D:hover {
+  color: black !important;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  background-color: var(--primaryColor);
+  border: none;
+}
+
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM:hover
+  .ReactFlagsSelect-module_label__27pw9 {
+  color: black !important;
+}
