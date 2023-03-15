@@ -216,7 +216,7 @@ export default function ReservationDialog(props: ChildProps) {
                                 }}
                             />
                         </Grid>
-                        {reservation != null && <Grid item xs={12}>
+                        {reservation?.getId() != null && <Grid item xs={12}>
                             <FormControl fullWidth margin="dense">
                                 <InputLabel id="service-select-label">Estado</InputLabel>
                                 <Select
