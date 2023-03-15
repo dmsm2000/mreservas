@@ -89,6 +89,16 @@ export default function ReservationDialog(props: ChildProps) {
         }
     }
 
+    function disableCreateUpdateButton(): boolean {
+        if(reservation?.getId != null) {
+            return !(name !== "" && selectedService !== null && startDate !== null && endDate !== null && 
+            endDate.getTime() > startDate.getTime())
+
+        } 
+        return !(name !== "" && selectedService !== null && startDate !== null && endDate !== null && 
+                        startDate.getTime() >= new Date().getTime() && endDate.getTime() > startDate.getTime())
+    }
+
     return (
         <>
             <Backdrop
@@ -241,8 +251,7 @@ export default function ReservationDialog(props: ChildProps) {
                         setShowDialogConfirmDelete(true)
                     }}>{t('getDeleteButtonLabel')}</Button>}
                     <Button
-                        disabled={!(name !== "" && selectedService !== null && startDate !== null && endDate !== null && 
-                        startDate.getTime() >= new Date().getTime() && endDate.getTime() > startDate.getTime())}
+                        disabled={disableCreateUpdateButton()}
                         onClick={() => {
                             setIsLoading(true)
                             createOrUpdateReservation()
