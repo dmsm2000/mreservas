@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mreservas/static/css/main.176c7760.css",
-    "main.js": "/mreservas/static/js/main.5f226da6.js",
+    "main.js": "/mreservas/static/js/main.64f6fe2c.js",
     "static/js/787.f1bea946.chunk.js": "/mreservas/static/js/787.f1bea946.chunk.js",
     "static/media/login.png": "/mreservas/static/media/login.f978dc67f3e6b1a160a4.png",
     "index.html": "/mreservas/index.html",
     "main.176c7760.css.map": "/mreservas/static/css/main.176c7760.css.map",
-    "main.5f226da6.js.map": "/mreservas/static/js/main.5f226da6.js.map",
+    "main.64f6fe2c.js.map": "/mreservas/static/js/main.64f6fe2c.js.map",
     "787.f1bea946.chunk.js.map": "/mreservas/static/js/787.f1bea946.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.176c7760.css",
-    "static/js/main.5f226da6.js"
+    "static/js/main.64f6fe2c.js"
   ]
 }
