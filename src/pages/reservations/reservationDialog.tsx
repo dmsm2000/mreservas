@@ -241,7 +241,8 @@ export default function ReservationDialog(props: ChildProps) {
                         setShowDialogConfirmDelete(true)
                     }}>{t('getDeleteButtonLabel')}</Button>}
                     <Button
-                        disabled={!(name != "" && selectedService != null && startDate != null && endDate != null && startDate.getTime() >= (new Date()).getTime() && endDate.getTime() >= startDate.getTime())}
+                        disabled={!(name !== "" && selectedService !== null && startDate !== null && endDate !== null && 
+                        startDate.getTime() >= new Date().getTime() && endDate.getTime() > startDate.getTime())}
                         onClick={() => {
                             setIsLoading(true)
                             createOrUpdateReservation()
