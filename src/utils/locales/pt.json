@@ -12,6 +12,7 @@
   "getCreateButtonLabel": "Criar",
   "getYesButtonLabel": "Sim",
   "getNoButtonLabel": "Não",
+  "getOkButtonLabel": "OK",
 
   "getEmailLabel": "Email",
   "getPasswordLabel": "Palavra Passe",
@@ -98,6 +99,9 @@
 
   "getPortugueseLanguage": "Português",
   "getEnglishLanguage": "Inglês",
-  "getMandatoryFieldsText": "Os campos assinalados com * são de caráter obrigatório."
+  "getMandatoryFieldsText": "Os campos assinalados com * são de caráter obrigatório.",
+  
+  "getImpossibilityReservationTitle": "Impossivel adicionar reserva",
+  "getImpossibilityReservationMessage": "Por favor, verifique que os dados introduzidos são válidos. Verifique ainda se a data de ínicio da reserva é superior á data atual em que se encontra a registar. "
 
 }

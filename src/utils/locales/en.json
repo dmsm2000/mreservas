@@ -12,6 +12,7 @@
   "getCreateButtonLabel": "Create",
   "getYesButtonLabel": "Yes",
   "getNoButtonLabel": "No",
+  "getOkButtonLabel": "OK",
 
   "getEmailLabel": "Email",
   "getPasswordLabel": "Password",
@@ -99,5 +100,9 @@
 
   "getPortugueseLanguage": "Portuguese",
   "getEnglishLanguage": "English",
-  "getMandatoryFieldsText": "The fields marked with * are required."
+  "getMandatoryFieldsText": "The fields marked with * are required.",
+
+
+  "getImpossibilityReservationTitle": "Unable to add reservation",
+  "getImpossibilityReservationMessage": "Please check that the data entered is valid./nVerify also that the reservation start date is later than the current date you are registering."
 }
