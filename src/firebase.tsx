@@ -62,10 +62,17 @@ const logout = (navigate: any) => {
     .catch((error) => alert(error));
 };
 
+const getTag = () => {
+  if(auth.currentUser) {
+    return auth.currentUser.email?.split("@")[0] + "-"
+  }
+  return ""
+}
+
 const addDocument = async (collectionToAdd: string, data: any) => {
   try {
     const docRef = await addDoc(
-      collection(db, collectionToAdd),
+      collection(db, getTag() + collectionToAdd),
       JSON.parse(JSON.stringify(data))
     );
     return docRef.id;
@@ -81,7 +88,7 @@ const addDocumentWithId = async (
   data: any
 ) => {
   try {
-    const docRef = doc(db, collectionToAdd, id);
+    const docRef = doc(db, getTag() + collectionToAdd, id);
     await setDoc(docRef, JSON.parse(JSON.stringify(data)));
     return id;
   } catch (error) {
@@ -96,7 +103,7 @@ const updateDocument = async (
   data: any
 ) => {
   try {
-    const docRef = doc(db, collectionToUpdate, id);
+    const docRef = doc(db, getTag() + collectionToUpdate, id);
     await updateDoc(docRef, JSON.parse(JSON.stringify(data)));
     return id;
   } catch (error) {
@@ -110,7 +117,7 @@ const deleteDocumentWithId = async (
   id: string
 ) => {
   try {
-    const docRef = doc(db, collectionToDelete, id);
+    const docRef = doc(db, getTag() + collectionToDelete, id);
     await deleteDoc(docRef);
     return id;
   } catch (error) {
@@ -121,11 +128,11 @@ const deleteDocumentWithId = async (
 
 
 function getCollectionRef(collectionName: string) {
-  return collection(db, collectionName);
+  return collection(db, getTag() + collectionName);
 }
 
 function getDocRefWithId(collectionToSearch: string, id: string) {
-  return doc(collection(db, collectionToSearch), id)
+  return doc(collection(db, getTag() + collectionToSearch), id)
 }
 
 export {
